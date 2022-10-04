@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "slug": null,
+    "name": "experience",
+    "desc": null,
+    "type": 1
+  },
+  {
+    "id": 2,
+    "slug": null,
+    "name": "event",
+    "desc": null,
+    "type": 1
+  },
+  {
+    "id": 3,
+    "slug": "ao-thun",
+    "name": "Áo thun",
+    "desc": "Dù có đơn giản đến đâu thì áo thun vẫn luôn là một trong những items không - thể - thiếu trong tủ đồ của bất kỳ chàng trai nào. Đơn giản - Gọn Gàng - Vừa Vặn sẽ là những điều mà Mew Fashion luôn chú ý kỹ đối với một chiếc áo thun. Những mẫu áo Thun Mới nhất đa dạng đủ kiểu dáng từ dài tay, ngắn tay với vô vàn những lựa phong cách khác nhau sẽ được Mew Fashion cập nhật hàng Tuần.",
+    "type": 2,
+    "children": [
+      {
+        "id": 8,
+        "slug": "ao-thun-polo",
+        "name": "Áo thun polo",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 9,
+        "slug": "ao-thun-unisex",
+        "name": "Áo thun unisex",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 10,
+        "slug": "ao-thun-tron",
+        "name": "Áo thun trơn",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 11,
+        "slug": "ao-thun-t-shirt",
+        "name": "Áo thun t-shirt",
+        "desc": null,
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "quan-short",
+    "name": "Quần short",
+    "desc": "Nếu phong cách yêu thích hàng ngày của bạn thường theo hơi hướng trẻ trung, năng động thì Quần short - một items kinh điển là chắc chắn không thể thiếu trong tủ đồ. Những thiết kế Quần Short ở Mew Fashion. chắc chắn sẽ làm hài lòng bạn bởi khả năng dễ dàng ăn nhập với mọi kiểu áo, hoàn cảnh khác nhau.",
+    "type": 2,
+    "children": [
+      {
+        "id": 12,
+        "slug": "quan-short-kaki",
+        "name": "Quần short kaki",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 13,
+        "slug": "quan-short-dui",
+        "name": "Quần short đũi",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 14,
+        "slug": "quan-short-gio",
+        "name": "Quần short gió",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 15,
+        "slug": "quan-short-the-thao",
+        "name": "Quần short thể thao",
+        "desc": null,
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "so-mi-dai-tay",
+    "name": "Sơ mi dài tay",
+    "desc": "Nếu đang đắn đo tìm kiếm một chiếc áo giúp bạn luôn ghi trọn điểm Chỉn chu, Gọn gàng trong mắt mọi người thì Sơ Mi luôn là sự lựa chọn số 1. Đa dạng kiểu dáng và phong cách, ở đây bạn chắc chắn sẽ tìm được chiếc áo sơ mi Vừa vặn và phù hợp với mình.",
+    "type": 2,
+    "children": [
+      {
+        "id": 16,
+        "slug": "so-mi-dai-tay-da",
+        "name": "Sơ mi dài tay dạ",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 17,
+        "slug": "so-mi-dai-tay-hoa-tiet",
+        "name": "Sơ mi dài tay họa tiết",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 18,
+        "slug": "so-mi-dai-tay-ke",
+        "name": "Sơ mi dài tay kẻ",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 19,
+        "slug": "so-mi-dai-tay-tron",
+        "name": "Sơ mi dài tay trơn",
+        "desc": null,
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "so-mi-ngan-tay",
+    "name": "Sơ mi ngắn tay",
+    "desc": "Nếu đang đắn đo tìm kiếm một chiếc áo giúp bạn luôn ghi trọn điểm Chỉn chu, Gọn gàng trong mắt mọi người thì Sơ Mi luôn là sự lựa chọn số 1. Đa dạng kiểu dáng và phong cách, ở đây bạn chắc chắn sẽ tìm được chiếc áo sơ mi Vừa vặn và phù hợp với mình.",
+    "type": 2,
+    "children": [
+      {
+        "id": 20,
+        "slug": "ao-aloha",
+        "name": "Áo aloha",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 21,
+        "slug": "ao-cam-shirt",
+        "name": "Áo cam shirt",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 22,
+        "slug": "so-mi-ngan-tay-hoa-tiet",
+        "name": "Sơ mi ngắn tay họa tiết",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 23,
+        "slug": "so-mi-ngan-tay-ke",
+        "name": "Sơ mi ngắn tay kẻ",
+        "desc": null,
+        "type": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "quan-dai",
+    "name": "Quần dài",
+    "desc": "Tủ đồ của một chàng trai yêu thích sự Tinh tế sẽ không bao giờ có thể thiếu vắng đi những chiếc quần dài đầy Lịch lãm và Nam Tính. Bạn có thể dễ dàng tìm được kiểu dáng quần cùng mẫu mã phù hợp nhất với mình trong số vô vàn những thiết kế Mới Nhất luôn được Mew Fashion cập nhật tại đây.",
+    "type": 2,
+    "children": [
+      {
+        "id": 24,
+        "slug": "quan-au",
+        "name": "Quần âu",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 25,
+        "slug": "quan-kaki",
+        "name": "Quần kaki",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 26,
+        "slug": "quan-jean",
+        "name": "Quần jean",
+        "desc": null,
+        "type": 2
+      },
+      {
+        "id": 27,
+        "slug": "quan-gio",
+        "name": "Quần gió",
+        "desc": null,
+        "type": 2
+      }
+    ]
+  }
+]

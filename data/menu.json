@@ -1,0 +1,495 @@
+[
+  {
+    "id": 1,
+    "name": "Trang chủ",
+    "url": "/",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 2,
+    "name": "Giới thiệu",
+    "url": "/gioi-thieu",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 3,
+    "name": "Sản phẩm",
+    "url": "/collections/all",
+    "type": 1,
+    "children": [
+      {
+        "id": 9,
+        "name": "Áo thun",
+        "url": "/collections/ao-thun",
+        "type": 1,
+        "image": "/images/c753c457ac0583ca2688eed79f9ad2b6.jpg",
+        "icon": "/images/icon_menu_1.png",
+
+        "children": [
+          {
+            "id": 14,
+            "name": "Áo thun polo",
+            "url": "/collections/ao-thun/ao-thun-polo",
+            "categoryId": 8,
+            "image": "/images/172ab8f71f537d45a3efccab3944000c.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 15,
+            "name": "Áo thun unisex",
+            "url": "/collections/ao-thun/ao-thun-unisex",
+            "categoryId": 9,
+            "image": "/images/nguon-si-ao-thun-unisex.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 16,
+            "name": "Áo thun trơn",
+            "url": "/collections/ao-thun/ao-thun-tron",
+            "categoryId": 10,
+            "image": "/images/burmxdi.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          },
+          {
+            "id": 17,
+            "name": "Áo thun T-shirt",
+            "url": "/collections/ao-thun/ao-thun-t-shirt",
+            "categoryId": 11,
+            "image": "/images/b716c640eb8f41f587f202b2afb80192.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 9
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 10,
+        "name": "Quần short",
+        "url": "/collections/quan-short",
+        "categoryId": 4,
+        "type": 1,
+        "image": "/images/2.jpg",
+        "icon": "/images/icon_menu_2.png",
+        "children": [
+          {
+            "id": 18,
+            "name": "Quần short kaki",
+            "url": "/collections/quan-short/quan-short-kaki",
+            "categoryId": 12,
+            "image": "/images/quan-short-kaki-nam-pull-bear-rps018-den.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 19,
+            "name": "Quần short đũi",
+            "url": "/collections/quan-short/quan-short-dui",
+            "categoryId": 13,
+            "image": "/images/245000a2adc7fb8b18c3d8fae4b7ced4.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 20,
+            "name": "Quần short gió",
+            "url": "/collections/quan-short/quan-short-gio",
+            "categoryId": 14,
+            "image": "/images/2727a77d253183d3a9e35e32f3ed24bd.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          },
+          {
+            "id": 21,
+            "name": "Quần short thể thao",
+            "url": "/collections/quan-short/quan-short-the-thao",
+            "categoryId": 15,
+            "image": "/images/z1912464598776-9f1ec4fce0a77d68668b8b3073ac2c10.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 10
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 11,
+        "name": "Sơ mi dài tay",
+        "url": "/collections/so-mi-dai-tay",
+        "categoryId": 5,
+        "type": 1,
+        "image": "/images/3.png",
+        "icon": "/images/icon_menu_3.png",
+
+        "children": [
+          {
+            "id": 22,
+            "name": "Sơ mi dài tay dạ",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-da",
+            "categoryId": 16,
+            "image": "/images/ao-khoac-so-mi-da-flanel-nau.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 23,
+            "name": "Sơ mi dài tay họa tiết",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-hoa-tiet",
+            "categoryId": 17,
+            "image": "/images/ao-so-mi-hoa-tiet-hoa-la.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 24,
+            "name": "Sơ mi dài tay kẻ",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-ke",
+            "categoryId": 18,
+            "image": "/images/zhpbgp.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          },
+          {
+            "id": 25,
+            "name": "Sơ mi dài tay trơn",
+            "url": "/collections/so-mi-dai-tay/so-mi-dai-tay-tron",
+            "categoryId": 19,
+            "image": "/images/sm-dt-tronbsceffylo-gr-0.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 11
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 12,
+        "name": "Sơ mi ngắn tay",
+        "url": "/collections/so-mi-ngan-tay",
+        "categoryId": 6,
+        "type": 1,
+        "image": "/images/4.jpg",
+        "icon": "/images/icon_menu_4.png",
+
+        "children": [
+          {
+            "id": 26,
+            "name": "Áo aloha",
+            "url": "/collections/so-mi-ngan-tay/ao-aloha",
+            "categoryId": 20,
+            "image": "/images/ao-so-mi-nam-hoa-tiet-hoa-la-5.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 27,
+            "name": "Áo camp shirt",
+            "url": "/collections/so-mi-ngan-tay/ao-camp-shirt",
+            "categoryId": 21,
+            "image": "/images/ignite-summer-camp-legendary-shirt-shirt.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 28,
+            "name": "Sơ mi ngắn tay họa tiết",
+            "url": "/collections/so-mi-ngan-tay/so-mi-ngan-tay-hoa-tiet",
+            "categoryId": 22,
+            "image": "/images/1936839-l.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          },
+          {
+            "id": 29,
+            "name": "Sơ mi ngắn tay kẻ",
+            "url": "/collections/so-mi-ngan-tay/so-mi-ngan-tay-ke",
+            "categoryId": 23,
+            "image": "/images/e2ec0314fcf71725cbf4b7564bc453b1.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 12
+          }
+        ],
+        "parentId": 3
+      },
+      {
+        "id": 13,
+        "name": "Quần dài",
+        "url": "/collections/quan-dai",
+        "categoryId": 7,
+        "type": 1,
+        "image": "/images/5.jpg",
+        "icon": "/images/icon_menu_5.png",
+
+        "children": [
+          {
+            "id": 30,
+            "name": "Quần âu",
+            "url": "/collections/quan-dai/quan-au",
+            "categoryId": 24,
+            "image": "/images/49f7da5b9825a56124922264af79ed17.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 31,
+            "name": "Quần kaki",
+            "url": "/collections/quan-dai/quan-kaki",
+            "categoryId": 25,
+            "image": "/images/082e7dd944f3d3185d40632f586f8c1c.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 32,
+            "name": "Quần jean",
+            "url": "/collections/quan-dai/quan-jean",
+            "categoryId": 26,
+            "image": "/images/shop-o-jeans.jpg",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          },
+          {
+            "id": 33,
+            "name": "Quần gió",
+            "url": "/collections/quan-dai/quan-gio",
+            "categoryId": 27,
+            "image": "/images/e43417c0-d79c-11e9-99cf-e58a9510db44.png",
+            "type": 1,
+            "children": null,
+            "parentId": 13
+          }
+        ],
+        "parentId": 3
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 4,
+    "name": "Hệ thống cửa hàng",
+    "url": "/he-thong-cua-hang",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 5,
+    "name": "Liên hệ",
+    "url": "/lien-he",
+    "type": 1,
+    "children": null,
+    "parentId": null
+  },
+  {
+    "id": 6,
+    "name": "Tin tức",
+    "url": "/tin-tuc",
+    "type": 1,
+    "children": [
+      {
+        "id": 7,
+        "name": "Kinh nghiệm phối đồ",
+        "url": "/tin-tuc",
+        "type": 1,
+        "children": null,
+        "parentId": 6
+      },
+      {
+        "id": 8,
+        "name": "Sự kiện",
+        "url": "/tin-tuc",
+        "type": 1,
+        "children": null,
+        "parentId": 6
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 34,
+    "name": "Chính sách",
+    "url": "/#",
+    "type": 2,
+    "children": [
+      {
+        "id": 38,
+        "name": "Chính sách mua hàng",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 39,
+        "name": "Chính sách vận chuyển",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 40,
+        "name": "Chính sách thanh toán",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      },
+      {
+        "id": 41,
+        "name": "Chính sách đổi trả",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 34
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 35,
+    "name": "Hỗ trợ",
+    "url": "/#",
+    "type": 2,
+    "children": [
+      {
+        "id": 42,
+        "name": "Thông tin tư vấn 24/7",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 43,
+        "name": "Hưỡng dẫn mua hàng",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 44,
+        "name": "Hướng dẫn thanh toán",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      },
+      {
+        "id": 45,
+        "name": "Hướng dẫn đổi trả",
+        "url": "/",
+        "type": 2,
+        "children": null,
+        "parentId": 35
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 36,
+    "name": "Sản phẩm",
+    "url": "/#",
+    "type": 2,
+    "children": [
+      {
+        "id": 46,
+        "name": "Áo thun",
+        "url": "/collections/ao-thun",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 47,
+        "name": "Quần short",
+        "url": "/collections/quan-short",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 48,
+        "name": "Sơ mi dài tay",
+        "url": "/collections/so-mi-dai-tay",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 49,
+        "name": "Sơ mi ngắn tay",
+        "url": "/collections/so-mi-ngan-tay",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      },
+      {
+        "id": 50,
+        "name": "Quần dài",
+        "url": "/collections/quan-dai",
+        "type": 2,
+        "children": null,
+        "parentId": 36
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": 37,
+    "name": "Thông tin liên hệ",
+    "url": "/#",
+    "type": 2,
+    "children": [
+      {
+        "id": 51,
+        "name": "Địa chỉ: Ladeco Building, 266 Doi Can Street, Ba Dinh District, Hanoi.",
+        "url": "/#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      },
+      {
+        "id": 52,
+        "name": "Email: support@sapo.vn",
+        "url": "/#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      },
+      {
+        "id": 53,
+        "name": "Số điện thoại: 1900 6750",
+        "url": "/#",
+        "type": 2,
+        "children": null,
+        "parentId": 37
+      }
+    ],
+    "parentId": null
+  }
+]

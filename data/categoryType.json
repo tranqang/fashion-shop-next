@@ -1,0 +1,10 @@
+[
+  {
+    "type": 1,
+    "name": "news"
+  },
+  {
+    "type": 2,
+    "name": "product"
+  }
+]
