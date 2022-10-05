@@ -5,7 +5,6 @@ import convertPrice from '../helpers/convertPrice';
 import divideBy from '../helpers/divideBy';
 import CartIcon from '../components/icons/CartIcon';
 import TickBoldIcon from '../components/icons/TickBoldIcon';
-import { v4 as uuidv4 } from 'uuid';
 import {
   addToCart,
   increaseCart,
@@ -53,25 +52,17 @@ function ProductFormSelect({ product, colorSelect, setColorSelect }) {
   };
   const handleCart = e => {
     e.preventDefault();
-    const cartItem = {
-      id: uuidv4(),
-      productId: product.id,
-      size: sizeSelect.id,
-      color: colorSelect.color,
-      quantity: quantity,
-    };
-    console.log(cartItem);
-    const existProduct = cart.find(
-      item =>
-        item.productId === cartItem.productId &&
-        item.size === cartItem.size &&
-        item.color === cartItem.color
+    dispatch(
+      increaseCart({
+        item: {
+          productId: product.id,
+          size: sizeSelect.id,
+          color: colorSelect.color,
+          quantity,
+        },
+        totalCart: cart,
+      })
     );
-    if (!existProduct) {
-      dispatch(addToCart(cartItem));
-      return;
-    }
-    dispatch(increaseCart({ id: existProduct.id, quantity: quantity }));
   };
   return (
     <>

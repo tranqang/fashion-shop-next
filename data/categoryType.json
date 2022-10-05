@@ -6,5 +6,17 @@
   {
     "type": 2,
     "name": "product"
+  },
+  {
+    "type": 3,
+    "name": "introduce"
+  },
+  {
+    "type": 4,
+    "name": "store"
+  },
+  {
+    "type": 5,
+    "name": "contact"
   }
 ]

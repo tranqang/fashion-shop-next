@@ -1,28 +1,24 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Map from '../components/Map';
+import { categoryData } from '../data/data';
 import DefaultLayout from '../layouts/DefaultLayout';
 function Contact() {
+  const category = categoryData.find(category => category.type === 5);
   return (
     <DefaultLayout>
       <div className='container'>
-        <BreadCrumb from='Trang chủ' to='Liên Hệ' />
+        <BreadCrumb from='Trang chủ' to={category.name} />
         <div className='rte m-auto bg-white pt-3 pb-3'>
-          <h1 className='font-weight-bold page_title'>Liên Hệ</h1>
+          <h1 className='font-weight-bold page_title'>{category.name}</h1>
           <div className='row'>
             <div className='col-md-6 col-12'>
               <div className='content_ct text-justify mb-3'>
-                MEWFASHION cửa hàng cung các mặt hàng thời trang chính hãng với
-                hơn 3 năm kinh nghiệm trong lĩnh vực bán buôn , phân phối và bán
-                lẻ
-                <br />
-                Trong hơn 2 năm 2019-2021 chúng tôi hãnh diện là nhà phân phối ,
-                bán lẻ hàng chính hãng có tiếng ở VN , đã cung cấp rất nhiều sản
-                phẩm cho người nổi tiếng , các cửa hàng có tiếng và mang đến quý
-                khách hàng sản phẩm chính hãng , hơn thế nữa cung cấp chế độ đổi
-                theo giúp cho quý khách yên tâm sử dụng sản phẩm.
+                {category.desc.map((descItem, index) => (
+                  <p key={index}>{descItem}</p>
+                ))}
               </div>
-              <p>
+              {/* <p>
                 Địa chỉ: Ladeco Building, 266 Doi Can Street, Ba Dinh District,
                 Hanoi.
               </p>
@@ -37,7 +33,7 @@ function Contact() {
                 <a href='tel:19006750' title='1900 6750'>
                   1900 6750
                 </a>
-              </p>
+              </p> */}
             </div>
             <div className='col-md-6 col-12'>
               <form

@@ -10,6 +10,10 @@ import Link from 'next/link';
 import { productData } from '../../data/data';
 import ProductFormSelect from '../../components/ProductFormSelect';
 import ProductDetailsImg from '../../ProductDetailsImg';
+import Toast from '../../components/Toast';
+import { useSelector } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function ProductDetail() {
   const router = useRouter();
   const productId = router.query['product-id'] - 0;
@@ -18,6 +22,7 @@ function ProductDetail() {
   const [productDetail, setProductDetail] = useState({});
   const [colorSelect, setColorSelect] = useState({ color: null });
   const [productImg, setProductImg] = useState({});
+
   useEffect(() => {
     const product = productData.find(product => product.id === productId - 0);
     setProductDetail(product);
@@ -119,6 +124,19 @@ function ProductDetail() {
           {showModal && <SizeModal setShowModal={setShowModal} />}
         </div>
       )}
+      {/* <Toast /> */}
+      <ToastContainer
+        theme='colored'
+        position='top-right'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </DefaultLayout>
   );
 }

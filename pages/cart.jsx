@@ -10,6 +10,7 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 function Cart() {
   const cart = useSelector(state => state.cart);
+  console.log(cart);
   const totalPrice = cart
     .map(item => {
       const priceList = productData.find(
@@ -18,7 +19,6 @@ function Cart() {
       const price = priceList.find(
         price => price.size === item.size && price.color === item.color
       ).unit_price;
-      console.log(price);
       return price * item.quantity;
     })
     .reduce((prev, current) => prev + current, 0);
