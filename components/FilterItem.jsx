@@ -1,19 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addFilter } from '../redux/reducers/filterSlice';
 
-function FilterItem({ id, title, items, allFilter, setAllFilter }) {
-  const handleChecked = item => {
-    return allFilter.some(filter => filter.id === item.id);
-  };
+function FilterItem({ id, title, items }) {
+  const dispatch = useDispatch();
+  const filter = useSelector(state => state.filter);
+  //   const handleChecked = item => {
+  //     return filter.some(filter => filter.id === item.id);
+  //   };
+
   const handleChangeSelect = item => {
-    if (handleChecked(item)) {
-      setAllFilter(allFilter.filter(filter => filter.id !== item.id));
-    } else {
-      const removedFilter = allFilter.filter(
-        filter => filter.parentId !== item.parentId
-      );
-      setAllFilter([...removedFilter, item]);
-    }
+    dispatch(addFilter(item));
   };
 
   return (
@@ -34,8 +32,8 @@ function FilterItem({ id, title, items, allFilter, setAllFilter }) {
                   htmlFor={item.key}
                 >
                   <input
-                    // onChange={() => handleChangeSelect(item)}
-                    // checked={handleChecked(item)}
+                    onChange={() => handleChangeSelect(item)}
+                    checked={filter.some(current => current.id === item.id)}
                     type='checkbox'
                     id={item.key}
                     name={id}

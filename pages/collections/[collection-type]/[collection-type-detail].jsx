@@ -14,6 +14,7 @@ import ProductCard from '../../../components/ProductCard';
 import Link from 'next/link';
 import BreadCrumb from '../../../components/BreadCrumb';
 import Sort from '../../../components/Sort';
+import { useSelector } from 'react-redux';
 
 function CollectionTypeDetail() {
   const router = useRouter();
@@ -26,14 +27,22 @@ function CollectionTypeDetail() {
     currentCategory &&
     currentCategory.children.find(child => child.slug === collectionTypeDetail);
 
-  console.log(currentCategoryChild);
-
-  const [filter, setFilter] = useState([]);
+  const filter = useSelector(state => state.filter);
+  const priceFilter = filter.find(current => current.parentId === 2);
   const newsDataSorted = newsData.sort((a, b) => b.rating - a.rating);
   const currentPage = router.query.page - 0 || 1;
-  const productList = productData.filter(
-    product => currentCategoryChild.id === product.categoryId
-  );
+  const productList = priceFilter
+    ? productData
+        .filter(
+          product =>
+            product.average_price >= priceFilter.key[0] &&
+            product.average_price <= priceFilter.key[1]
+        )
+        .filter(product => currentCategoryChild.id === product.categoryId)
+    : productData.filter(
+        product => currentCategoryChild.id === product.categoryId
+      );
+  console.log(productList);
   const totalPage = Math.ceil(productList.length / 6);
   const productDisplay = productList.slice(
     (currentPage - 1) * 6,
@@ -72,7 +81,7 @@ function CollectionTypeDetail() {
               </div>
               <div className='col-12 col-lg-3 order-lg-1 stk-pro'>
                 <div className='align-items-center'>
-                  <FilterList filter={filter} setFilter={setFilter} />
+                  <FilterList />
                   <BlogList
                     url='/'
                     title='Bài viết nối bật'

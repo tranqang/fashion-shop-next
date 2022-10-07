@@ -9,17 +9,25 @@ import { useRouter } from 'next/router';
 import { categoryData, menuData, newsData, productData } from '../../data/data';
 import Link from 'next/link';
 import FilterList from '../../components/FilterList';
+import { useSelector } from 'react-redux';
 function All() {
   const router = useRouter();
+  const filter = useSelector(state => state.filter);
+  const priceFilter = filter.find(current => current.parentId === 2);
   const currentPage = router.query.page - 0 || 1;
-  const allProduct = productData;
-  const totalPage = Math.ceil(allProduct.length / 6);
-  const productDisplay = allProduct.slice(
+  const totalProduct = priceFilter
+    ? productData.filter(
+        product =>
+          product.average_price >= priceFilter.key[0] &&
+          product.average_price <= priceFilter.key[1]
+      )
+    : productData;
+  const totalPage = Math.ceil(totalProduct.length / 6);
+  const productDisplay = totalProduct.slice(
     (currentPage - 1) * 6,
     currentPage * 6
   );
   const newsDataSorted = newsData.sort((a, b) => b.rating - a.rating);
-  const [filter, setFilter] = useState([]);
   const childrenCategory = categoryData.filter(category => category.type === 2);
   return (
     <DefaultLayout>
@@ -65,7 +73,7 @@ function All() {
             </div>
             <div className='col-12 col-lg-3 order-lg-1 stk-pro'>
               <div className='align-items-center'>
-                <FilterList filter={filter} setFilter={setFilter} />
+                <FilterList />
                 <BlogList
                   url='/'
                   title='Bài viết nối bật'

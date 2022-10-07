@@ -4,12 +4,7 @@ import { toast } from 'react-toastify';
 import { productData } from '../../data/data';
 const cartSlice = createSlice({
   name: 'cart',
-  initialState: () => {
-    if (typeof window !== 'undefined') {
-      return JSON.parse(localStorage.getItem('cart')) ?? [];
-    }
-    return [];
-  },
+  initialState: [],
   reducers: {
     addToCart: (state, action) => {
       state.push(action.payload);
@@ -49,11 +44,6 @@ const cartSlice = createSlice({
     },
     increaseCart: (state, action) => {
       console.log('increase checking');
-      //   state.find(item => item.id === action.payload.id).quantity +=
-      //     action.payload.quantity;
-      //   if (typeof window !== 'undefined') {
-      //     localStorage.setItem('cart', JSON.stringify(state));
-      //   }
       return state;
     },
     increaseCartSuccess: (state, action) => {
@@ -97,6 +87,9 @@ const cartSlice = createSlice({
         </>
       );
     },
+    reload: (state, action) => {
+      return action.payload;
+    },
   },
 });
 export const {
@@ -106,5 +99,6 @@ export const {
   increaseCart,
   increaseCartSuccess,
   increaseCartFailure,
+  reload,
 } = cartSlice.actions;
 export default cartSlice.reducer;

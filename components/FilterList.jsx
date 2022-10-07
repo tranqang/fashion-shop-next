@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { filterData } from '../data/data';
 import FilterItem from '../components/FilterItem';
-function FilterList({ filter, setFilter }) {
+import { useDispatch, useSelector } from 'react-redux';
+import { clearFilter, removeFilter } from '../redux/reducers/filterSlice';
+function FilterList() {
   const [openFilter, setOpenFilter] = useState(false);
+  const filter = useSelector(state => state.filter);
+  const dispatch = useDispatch();
   return (
     <>
       <div
@@ -16,8 +20,11 @@ function FilterList({ filter, setFilter }) {
             <span className='filter-container__selected-filter-header-title'>
               LỌC THEO:
             </span>
-            <Link href='/#'>
-              <a className='filter-container__clear-all text-danger ml-auto'>
+            <Link href={'#'}>
+              <a
+                onClick={() => dispatch(clearFilter())}
+                className='filter-container__clear-all text-danger ml-auto'
+              >
                 Xóa tất cả
               </a>
             </Link>
@@ -28,9 +35,11 @@ function FilterList({ filter, setFilter }) {
                 key={filter.id}
                 className='filter-container__selected-filter-item pr-1 d-inline-flex align-items-center mr-1 mb-2'
               >
-                <Link href='/#'>
-                  <img src='/images/close.png' alt='' />
-                  {filter.value}
+                <Link href={'#'}>
+                  <a onClick={() => dispatch(removeFilter(filter))}>
+                    <img src='/images/close.png' alt='' />
+                    {filter.value}
+                  </a>
                 </Link>
               </li>
             ))}
@@ -40,8 +49,6 @@ function FilterList({ filter, setFilter }) {
           <div className='filter-container'>
             {filterData.map((filterItem, index) => (
               <FilterItem
-                allFilter={filter}
-                setAllFilter={setFilter}
                 key={index}
                 id={filterItem.id}
                 title={filterItem.title}

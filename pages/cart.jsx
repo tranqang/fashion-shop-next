@@ -10,7 +10,6 @@ import DefaultLayout from '../layouts/DefaultLayout';
 
 function Cart() {
   const cart = useSelector(state => state.cart);
-  console.log(cart);
   const totalPrice = cart
     .map(item => {
       const priceList = productData.find(

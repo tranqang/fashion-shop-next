@@ -3,19 +3,17 @@ import { v4 as uuidv4 } from 'uuid';
 import { productData } from '../data/data';
 import {
   addToCart,
+  deleteFromCart,
   increaseCart,
   increaseCartFailure,
   increaseCartSuccess,
+  saveToStorage,
+  updateCart,
 } from './reducers/cartSlice';
 
-const delay = ms => new Promise(res => setTimeout(res, ms));
-
-function* helloSaga() {
-  console.log('Hello Sagas!');
-}
 function* cartChecking(action) {
   const { totalCart, item } = action.payload;
-
+  console.log(totalCart, item);
   const existProduct = totalCart.find(
     current =>
       current.productId === item.productId &&
@@ -49,13 +47,12 @@ function* cartChecking(action) {
       yield put(increaseCartFailure({ productId: existProduct.productId }));
     }
   }
-
-  //   yield put(increaseCart());
 }
 function* watchIncrementCart() {
   yield takeEvery(increaseCart().type, cartChecking);
 }
+
 function* rootSaga() {
-  yield all([helloSaga(), watchIncrementCart()]);
+  yield all([watchIncrementCart()]);
 }
 export default rootSaga;

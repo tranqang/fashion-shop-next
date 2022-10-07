@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
@@ -11,6 +12,7 @@ import { show } from '../redux/reducers/toggleSlice';
 import SearchIcon from './icons/SearchIcon';
 
 function SearchBlock() {
+  const router = useRouter();
   const searchState = useSelector(state => state.toggle.search);
   const dispatch = useDispatch();
   const [input, setInput] = useState('');
@@ -41,7 +43,7 @@ function SearchBlock() {
 
   return (
     <div className='search-block'>
-      <Link href='#'>
+      <Link href={'#'}>
         <a
           onClick={() => {
             dispatch(show({ key: 'search', value: true }));
